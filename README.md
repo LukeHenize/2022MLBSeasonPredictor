@@ -17,10 +17,19 @@ each team's final win/loss record according to both predicted and actual results
 analysis of predictions in this repository shows about a 90% accuracy in predicting a team's final record.
 
 Finally, the "Bonus Web Scraping" folder is largely unrelated to the rest of my project. It contains a separate Python file that scrapes data from FanGraphs.com, a
-site that publishes their own MLB predictions using a more advanced model. I would've liked to compare the results of my predictor to theirs, but time didn't allow. I've
-left this folder in the repository in case anyone is interested anyways.
+site that publishes their own MLB predictions using a more advanced model. I would've liked to compare the results of my predictor to theirs, but time didn't allow. 
+I've left this folder in the repository in case anyone is interested anyways.
 
-##Accuracy of the Predictions
-As mentioned briefly above, there are two insights into predicting baseball game results that I believe can be taken away from this project. The first is that any given individual game of baseball is extremely difficult to predict. For each team's predictions in this project, the average percentage of games predicted correctly hovered around only 50-55%, not much better than a coin toss.
+## Accuracy of the Predictions
+As mentioned briefly above, there are two insights into predicting baseball game results that I believe can be taken away from this project. The first is that any 
+given individual game of baseball is extremely difficult to predict. For each team's predictions in this project, the average percentage of games predicted correctly 
+hovered around only 50-55%, not much better than a coin toss. I believe this is because my head-to-head based model doesn't make use of enough data unique to 
+individual games, but also because baseball is very unique in this aspect that even the worst team can beat the best team relatively frequently, or at least more 
+frequently than in other sports.
+
+The other takeaway is that season-wide predictions, such as for a team's overall win/loss record, can be predicted more easily, as shown through the predictions and 
+analysis seen in the FinalStandings file. On average, a team's win loss record was within 5-10 games of the actual observed result in the 2022 MLB season, and 
+calculating a quick percent error value shows that predictions can be above 90% accurate when evaluating our model against season-wide results instead of indivdual 
+games.
 
 If you're reading this, thanks for checking out my project!
